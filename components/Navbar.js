@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <div className='fixed top-[96px] w-full h-screen md:hidden'>
+        <div className='fixed top-[96px] w-full h-screen md:hidden z-10 bg-black/70'>
           <div>
             <ul className='flex flex-col h-[235px] bg-black text-white justify-between text-[24px] leading-[25px] uppercase tracking-[2px] px-6 py-[48px]'>
               <Link href={'/'}>

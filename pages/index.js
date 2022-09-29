@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar></Navbar>
       {/* <Header></Header> */}
       <main>{/* <h1 className=''>Hello world!</h1> */}</main>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }

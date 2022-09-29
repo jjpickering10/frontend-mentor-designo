@@ -5,7 +5,7 @@
 @layer base {
   body,
   html {
-    @apply bg-white p-0 m-0 text-darkGrey text-[16px] leading-[26px] font-[400];
+    @apply bg-white p-0 m-0 text-darkGrey text-[16px] leading-[26px] font-[300];
   }
 
   h1 {
