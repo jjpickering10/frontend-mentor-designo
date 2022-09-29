@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Main from '../components/Main';
+import Info from '../components/Info';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
       <Main></Main>
+      <Info></Info>
       <Footer></Footer>
     </>
   );
