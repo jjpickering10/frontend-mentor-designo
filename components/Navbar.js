@@ -10,7 +10,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className='fixed w-full h-24 md:h-[155px] flex items-center justify-between px-6 md:px-[39px] lg:px-[165px]'>
+      <div className='fixed top-0 left-0 w-full h-24 md:h-[155px] flex items-center justify-between px-6 md:px-[39px] lg:px-[165px] bg-white z-50'>
         <Image
           src='/../public/assets/shared/desktop/logo-dark.png'
           alt='logo-dark'

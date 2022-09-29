@@ -11,9 +11,7 @@ const ProjectQuery = () => {
           Ready to take it to the next level? Contact us today and find out how
           our expertise can help your business grow.
         </p>
-        <button className='bg-white text-black uppercase rounded-lg h-[56px] w-[152px]'>
-          Get in touch
-        </button>
+        <button>Get in touch</button>
       </div>
     </div>
   );
