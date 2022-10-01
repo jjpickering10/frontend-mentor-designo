@@ -69,7 +69,7 @@ const Info = () => {
     );
   });
   return (
-    <div className='flex flex-col lg:flex-row lg:mx-[164px] lg:justify-between'>
+    <div className='flex flex-col lg:flex-row lg:mx-[164px] lg:justify-between lg:mt-[120px] lg:mb-[60px]'>
       {[infoSections]}
     </div>
   );

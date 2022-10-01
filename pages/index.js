@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Main from '../components/Main';
 import Info from '../components/Info';
 import ProjectQuery from '../components/ProjectQuery';
+import DesignCards from '../components/DesignCards';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
       <Main></Main>
+      <DesignCards></DesignCards>
       <Info></Info>
       <ProjectQuery></ProjectQuery>
       <Footer></Footer>
