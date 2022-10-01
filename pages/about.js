@@ -1,9 +1,4 @@
 import Head from 'next/head';
-import Header from '../components/Header';
-import Main from '../components/Main';
-import Info from '../components/Info';
-import ProjectQuery from '../components/ProjectQuery';
-import DesignCards from '../components/DesignCards';
 
 export default function About() {
   return (

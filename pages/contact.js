@@ -1,8 +1,4 @@
 import Head from 'next/head';
-import Header from '../components/Header';
-import Main from '../components/Main';
-import ProjectQuery from '../components/ProjectQuery';
-import DesignCards from '../components/DesignCards';
 
 export default function Contact() {
   return (

@@ -8,7 +8,7 @@ const ProjectQuery = () => {
         <h4 className='text-white font-medium text-[32px] leading-[35px] w-[279px]'>
           Let&apos;s talk about your project
         </h4>
-        <p className='text-white text-[15px] leading-[25px]'>
+        <p className='text-white text-[15px] leading-[25px] md:w-[445px]'>
           Ready to take it to the next level? Contact us today and find out how
           our expertise can help your business grow.
         </p>
