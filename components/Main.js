@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Main = () => {
   return (
@@ -10,7 +11,9 @@ const Main = () => {
           fully responsive websites, app design, and engaging brand experiences.
           Find out more about our services.
         </p>
-        <button>Learn More</button>
+        <Link href={'/about'}>
+          <button>Learn More</button>
+        </Link>
       </div>
       <div className='mx-[46px] lg:mx-0 w-[624px] h-[913px] relative top-[-89px] lg:top-[-30px] lg:right-[-74px] lg:left-auto lg:absolute'>
         <Image

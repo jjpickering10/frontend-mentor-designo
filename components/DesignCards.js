@@ -14,8 +14,6 @@ import svg from '../public/assets/shared/desktop/icon-right-arrow.svg';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-console.log(svg);
-
 const cards = [
   {
     heading: 'web design',
@@ -74,7 +72,6 @@ const DesignCards = () => {
     return (
       <div
         key={card.heading}
-        // className={`relative text-white overflow-hidden rounded-[15px]`}
         className={`relative text-white overflow-hidden rounded-[15px] ${
           card.heading === 'web design'
             ? 'lg:row-span-2 lg:justify-self-end'
@@ -90,7 +87,7 @@ const DesignCards = () => {
           className='absolute top-0 left-0 rounded-[15px]'
           layout='responsive'
         />
-        <div className='absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-center z-10'>
+        <div className='absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-center z-10 pointer-events-none'>
           <h2 className='uppercase'>{card.heading}</h2>
           <div></div>
           <p className='uppercase text-[15px] tracking-[5px] font-medium'>
@@ -103,7 +100,7 @@ const DesignCards = () => {
             />
           </p>
         </div>
-        <div className='absolute top-0 left-0 w-full h-full bg-black/70'></div>
+        <div className='absolute top-0 left-0 w-full h-full bg-darkGrey opacity-70 hover:bg-peach cursor-pointer'></div>
       </div>
     );
   });

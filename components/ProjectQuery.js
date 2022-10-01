@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const ProjectQuery = () => {
@@ -12,7 +13,9 @@ const ProjectQuery = () => {
           our expertise can help your business grow.
         </p>
       </div>
-      <button className='lg:mr-[95px] mt-[32px] lg:mt-0'>Get in touch</button>
+      <Link href={'/contact'}>
+        <button className='lg:mr-[95px] mt-[32px] lg:mt-0'>Get in touch</button>
+      </Link>
     </div>
   );
 };

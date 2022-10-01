@@ -11,12 +11,15 @@ const Navbar = () => {
   return (
     <>
       <div className='fixed top-0 left-0 w-full h-24 md:h-[155px] flex items-center justify-between px-6 md:px-[39px] lg:px-[165px] bg-white z-50'>
-        <Image
-          src='/../public/assets/shared/desktop/logo-dark.png'
-          alt='logo-dark'
-          width={'202px'}
-          height={'27px'}
-        />
+        <Link href={'/'}>
+          <Image
+            src='/../public/assets/shared/desktop/logo-dark.png'
+            alt='logo-dark'
+            width={'202px'}
+            height={'27px'}
+            className='cursor-pointer'
+          />
+        </Link>
 
         <svg
           onClick={handleNav}
@@ -39,13 +42,13 @@ const Navbar = () => {
         </svg>
 
         <ul className='hidden md:flex md:w-[370px] justify-between text-[14px] uppercase tracking-[2px]'>
-          <Link href={'/'}>
+          <Link href={'/about'}>
             <li className=' hover:underline cursor-pointer'>Our Company</li>
           </Link>
-          <Link href={'/'}>
+          <Link href={'/locations'}>
             <li className=' hover:underline cursor-pointer'>Locations</li>
           </Link>
-          <Link href={'/'}>
+          <Link href={'/contact'}>
             <li className=' hover:underline cursor-pointer'>Contact</li>
           </Link>
         </ul>
@@ -55,13 +58,13 @@ const Navbar = () => {
         <div className='fixed top-[96px] w-full h-screen md:hidden z-10 bg-black/70'>
           <div>
             <ul className='flex flex-col h-[235px] bg-black text-white justify-between text-[24px] leading-[25px] uppercase tracking-[2px] px-6 py-[48px]'>
-              <Link href={'/'}>
+              <Link href={'/about'}>
                 <li className=' font-normal'>Our Company</li>
               </Link>
-              <Link href={'/'}>
+              <Link href={'/locations'}>
                 <li className=' font-normal'>Locations</li>
               </Link>
-              <Link href={'/'}>
+              <Link href={'/contact'}>
                 <li className=' font-normal'>Contact</li>
               </Link>
             </ul>
