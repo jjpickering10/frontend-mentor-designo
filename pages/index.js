@@ -3,6 +3,7 @@ import Main from '../components/Main';
 import Info from '../components/Info';
 import DesignCards from '../components/DesignCards';
 import cards from '../data/designCardData';
+import sections from '../data/homeInfo';
 
 export default function Home() {
   const cardArray = [];
@@ -21,7 +22,7 @@ export default function Home() {
       </Head>
       <Main />
       <DesignCards cards={cardArray} />
-      <Info />
+      <Info sections={sections} page={'home'} />
     </>
   );
 }
