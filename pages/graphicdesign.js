@@ -3,6 +3,7 @@ import DesignHeader from '../components/DesignHeader';
 import design from '../data/designData';
 import DesignCards from '../components/DesignCards';
 import cards from '../data/designCardData';
+import DesignSection from '../components/DesignSection';
 
 export default function GraphicDesign() {
   const cardArray = [];
@@ -20,6 +21,7 @@ export default function GraphicDesign() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <DesignHeader page={design.graphic} />
+      <DesignSection page={design.graphic} />
       <DesignCards cards={cardArray} />
     </>
   );

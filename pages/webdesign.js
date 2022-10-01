@@ -3,6 +3,7 @@ import DesignHeader from '../components/DesignHeader';
 import design from '../data/designData';
 import DesignCards from '../components/DesignCards';
 import cards from '../data/designCardData';
+import DesignSection from '../components/DesignSection';
 
 export default function WebDesign() {
   const cardArray = [];
@@ -20,6 +21,7 @@ export default function WebDesign() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <DesignHeader page={design.web} />
+      <DesignSection page={design.web} />
       <DesignCards cards={cardArray} />
     </>
   );
