@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
-const AboutInfo = ({ section }) => {
+const AboutInfo = ({ section, about }) => {
   const [size, setSize] = useState(null);
 
   useEffect(() => {
@@ -48,18 +48,47 @@ const AboutInfo = ({ section }) => {
     );
   });
   const paragraphs = section.paragraphs.map((paragraph) => {
-    return <p key={paragraph}>{paragraph}</p>;
+    return (
+      <p
+        key={paragraph}
+        className={` text-[15px] ${about ? 'text-white' : 'text-black'} `}
+      >
+        {paragraph}
+      </p>
+    );
   });
   return (
     <div
-      className={`bg-faintPeach relative overflow-hidden md:mx-[39px] lg:mx-[165px] md:rounded-[15px] flex flex-col lg:flex-row ${
-        section.heading === 'The real deal' ? 'lg:flex-row-reverse' : ''
+      className={`${
+        about ? 'bg-peach mt-24 md:mt-[155px] md:mb-[120px]' : 'bg-faintPeach'
+      } relative overflow-hidden md:mx-[39px] lg:mx-[165px] md:rounded-[15px] flex flex-col lg:flex-row ${
+        section.heading === 'The real deal' || about
+          ? 'lg:flex-row-reverse'
+          : ''
       } lg:items-center lg:justify-center`}
     >
       {aboutImage}
-      <div className='flex flex-col items-center justify-center text-center lg:text-left mx-6 lg:mx-0 h-[545px] py-[80px] lg:py-0'>
-        <div className='h-[360px] flex flex-col justify-between items-center lg:items-start lg:h-[332px] lg:w-[635px] lg:px-[95px]'>
-          <h2 className='text-peach'>{section.heading}</h2>
+      <div
+        className={`flex flex-col items-center justify-center text-center lg:text-left mx-6 lg:mx-0 ${
+          about ? 'h-[395px]' : 'h-[545px]'
+        } py-[80px] lg:py-0`}
+      >
+        <div
+          className={`flex flex-col gap-6 justify-between items-center lg:items-start ${
+            about
+              ? 'lg:h-[210px] lg:pl-[95px] lg:pr-[80px]'
+              : 'lg:h-[332px] lg:px-[95px]'
+          }  lg:w-[635px]`}
+        >
+          {about ? (
+            <h1 className={`${about ? 'text-white' : 'text-peach'}`}>
+              {section.heading}
+            </h1>
+          ) : (
+            <h2 className={`${about ? 'text-white' : 'text-peach'}`}>
+              {section.heading}
+            </h2>
+          )}
           {paragraphs}
         </div>
       </div>
