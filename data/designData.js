@@ -15,9 +15,16 @@ import science from '../public/assets/graphic-design/desktop/image-science.jpg';
 import change from '../public/assets/graphic-design/desktop/image-change.jpg';
 import boxedWater from '../public/assets/graphic-design/desktop/image-boxed-water.jpg';
 
+import webDesktop from '../public/assets/web-design/desktop/bg-pattern-intro-web.svg';
+import appDesktop from '../public/assets/app-design/desktop/bg-pattern-intro-app.svg';
+import graphicDesktop from '../public/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg';
+import mobile from '../public/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg';
+import tablet from '../public/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg';
+
 const design = {
   web: {
     header: 'Web Design',
+    headerImages: { mobile: mobile, tablet: tablet, desktop: webDesktop },
     paragraph:
       'We build websites that serve as powerful marketing tools and bring memorable brand experiences.',
     cards: [
@@ -60,6 +67,7 @@ const design = {
   },
   app: {
     header: 'App Design',
+    headerImages: { mobile: mobile, tablet: tablet, desktop: appDesktop },
     paragraph:
       'Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.',
     cards: [
@@ -96,6 +104,7 @@ const design = {
   },
   graphic: {
     header: 'Graphic Design',
+    headerImages: { mobile: mobile, tablet: tablet, desktop: graphicDesktop },
     paragraph:
       'We deliver eye-catching branding materials that are tailored to meet your business objectives.',
     cards: [

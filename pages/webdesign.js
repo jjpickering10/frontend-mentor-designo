@@ -4,6 +4,7 @@ import design from '../data/designData';
 import DesignCards from '../components/DesignCards';
 import cards from '../data/designCardData';
 import DesignSection from '../components/DesignSection';
+import Pattern from '../components/Pattern';
 
 export default function WebDesign() {
   const cardArray = [];
@@ -23,6 +24,7 @@ export default function WebDesign() {
       <DesignHeader page={design.web} />
       <DesignSection page={design.web} />
       <DesignCards cards={cardArray} />
+      <Pattern page={'design'} />
     </>
   );
 }

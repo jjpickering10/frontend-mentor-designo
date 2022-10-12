@@ -6,6 +6,8 @@ import realDealMobile from '../public/assets/about/mobile/image-real-deal.jpg';
 import realDealTablet from '../public/assets/about/tablet/image-real-deal.jpg';
 import realDealDesktop from '../public/assets/about/desktop/image-real-deal.jpg';
 
+import svg from '../public/assets/shared/desktop/bg-pattern-three-circles.svg';
+
 const sections = [
   {
     heading: 'World-class talent',
@@ -14,7 +16,12 @@ const sections = [
       'Our team is multi-disciplinary and we are not merely interested in form — content and meaning are just as important. We give great importance to craftsmanship, service, and prompt delivery. Clients have always been impressed with our high-quality outcomes that encapsulates their brand’s story and mission.',
     ],
     images: [
-      { mobile: talentMobile, tablet: talentTablet, desktop: talentDesktop },
+      {
+        mobile: talentMobile,
+        tablet: talentTablet,
+        desktop: talentDesktop,
+        svg: svg,
+      },
     ],
   },
   {
@@ -28,6 +35,7 @@ const sections = [
         mobile: realDealMobile,
         tablet: realDealTablet,
         desktop: realDealDesktop,
+        svg: svg,
       },
     ],
   },

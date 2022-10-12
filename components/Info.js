@@ -4,7 +4,7 @@ const Info = ({ sections, page }) => {
   const infoSections = sections.map((section, index) => {
     return (
       <div
-        className={`flex flex-col ${
+        className={` z-[1] flex flex-col ${
           page === 'home' ? 'md:flex-row' : ''
         } lg:flex-col justify-center md:justify-between lg:justify-center items-center mx-6 md:mx-10 text-center md:text-left lg:text-center mt-10 mb-10 md:mt-4 lg:m-0 lg:w-[350px]`}
         key={index}
@@ -58,7 +58,7 @@ const Info = ({ sections, page }) => {
     );
   });
   return (
-    <div className='flex flex-col lg:flex-row lg:mx-[164px] lg:justify-between lg:mt-[120px] lg:mb-[60px]'>
+    <div className='flex flex-col lg:flex-row lg:mx-[164px] lg:justify-between lg:mt-[160px] lg:mb-[87px]'>
       {[infoSections]}
     </div>
   );

@@ -4,6 +4,7 @@ import design from '../data/designData';
 import DesignCards from '../components/DesignCards';
 import cards from '../data/designCardData';
 import DesignSection from '../components/DesignSection';
+import Pattern from '../components/Pattern';
 
 export default function GraphicDesign() {
   const cardArray = [];
@@ -23,6 +24,7 @@ export default function GraphicDesign() {
       <DesignHeader page={design.graphic} />
       <DesignSection page={design.graphic} />
       <DesignCards cards={cardArray} />
+      <Pattern page={'design'} />
     </>
   );
 }

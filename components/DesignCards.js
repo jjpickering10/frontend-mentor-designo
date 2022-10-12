@@ -46,7 +46,7 @@ const DesignCards = ({ cards }) => {
     return (
       <Link key={card.heading} href={`/${card.heading.split(' ').join('')}`}>
         <div
-          className={`relative text-white overflow-hidden rounded-[15px] ${
+          className={`z-[1] relative text-white overflow-hidden rounded-[15px] ${
             card.heading === 'web design' && cards.length === 3
               ? 'lg:row-span-2 lg:justify-self-end'
               : cards.length === 2 && index === 0
@@ -82,7 +82,7 @@ const DesignCards = ({ cards }) => {
     );
   });
   return (
-    <div className='flex flex-col gap-6 lg:grid lg:grid-cols-2 items-center justify-center mx-6 md:mx-[39px] lg:mx-[164px] my-[120px]'>
+    <div className='flex flex-col gap-6 lg:grid lg:grid-cols-2 items-center justify-center mx-6 md:mx-[39px] lg:mx-[164px] my-[160px]'>
       {designCards}
     </div>
   );

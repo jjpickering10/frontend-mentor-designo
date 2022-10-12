@@ -10,11 +10,18 @@ import uKMobile from '../public/assets/locations/desktop/image-map-united-kingdo
 import uKTablet from '../public/assets/locations/tablet/image-map-uk.png';
 import uKDesktop from '../public/assets/locations/desktop/image-map-united-kingdom.png';
 
+import svg from '../public/assets/shared/desktop/bg-pattern-three-circles.svg';
+
 const locations = [
   {
     location: 'Canada',
     images: [
-      { mobile: canadaMobile, tablet: canadaTablet, desktop: canadaDesktop },
+      {
+        mobile: canadaMobile,
+        tablet: canadaTablet,
+        desktop: canadaDesktop,
+        svg: svg,
+      },
     ],
     paragraphs: [
       {
@@ -36,6 +43,7 @@ const locations = [
         mobile: australiaMobile,
         tablet: australiaTablet,
         desktop: australiaDesktop,
+        svg: svg,
       },
     ],
     paragraphs: [
@@ -53,7 +61,9 @@ const locations = [
   },
   {
     location: 'United Kingdom',
-    images: [{ mobile: uKMobile, tablet: uKTablet, desktop: uKDesktop }],
+    images: [
+      { mobile: uKMobile, tablet: uKTablet, desktop: uKDesktop, svg: svg },
+    ],
     paragraphs: [
       {
         heading: 'Designo UK Office',

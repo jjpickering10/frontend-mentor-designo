@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 const LocationSection = ({ locations }) => {
-  console.log(locations);
   const [size, setSize] = useState(null);
 
   useEffect(() => {
@@ -20,7 +19,7 @@ const LocationSection = ({ locations }) => {
   const newLocations = locations.map((location) => {
     const newParagraphs = location.paragraphs.map((p) => {
       return (
-        <div key={p.heading} className='lg:w-[255px]'>
+        <div key={p.heading} className='md:w-[255px]'>
           <p className=' font-bold'>{p.heading}</p>
           <p>{p.p1}</p>
           <p>{p.p2}</p>
@@ -65,10 +64,20 @@ const LocationSection = ({ locations }) => {
           />
         </div>
         <div
-          className={`bg-faintPeach flex flex-col gap-6 items-center lg:items-start lg:min-w-[730px] justify-center px-6 py-20 lg:p-[90px] text-center lg:text-left md:rounded-[15px]`}
+          className={`relative overflow-hidden bg-faintPeach flex flex-col gap-6 items-center md:items-start md:min-w-[730px] justify-center px-6 py-20 md:p-[90px] text-center md:text-left md:rounded-[15px]`}
         >
+          <div className='absolute top-[0%] left-[-0%] md:top-[-77%]'>
+            <Image
+              src={location.images[0].svg.src}
+              height={location.images[0].svg.height}
+              width={location.images[0].svg.width}
+              alt={'circle watermark'}
+            />
+          </div>
           <h2 className='text-peach'>{location.location}</h2>
-          <div className='flex flex-col lg:flex-row gap-6'>{newParagraphs}</div>
+          <div className='relative flex flex-col md:flex-row gap-6'>
+            {newParagraphs}
+          </div>
         </div>
       </div>
     );

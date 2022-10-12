@@ -8,7 +8,7 @@ const DesignSection = ({ page }) => {
     return (
       <div
         key={card.header}
-        className={`group relative overflow-hidden rounded-[15px] bg-faintPeach hover:bg-peach text-peach hover:text-white flex flex-col md:flex-row lg:flex-col items-center justify-center cursor-pointer`}
+        className={`z-[1] group relative overflow-hidden rounded-[15px] bg-faintPeach hover:bg-peach text-peach hover:text-white flex flex-col md:flex-row lg:flex-col items-center justify-center cursor-pointer`}
       >
         <Image
           src={url}
@@ -27,7 +27,7 @@ const DesignSection = ({ page }) => {
     );
   });
   return (
-    <div className='flex flex-col gap-10 lg:grid lg:grid-cols-3 items-center justify-center mx-6 md:mx-[39px] lg:mx-[164px] my-[120px]'>
+    <div className='flex flex-col gap-10 lg:grid lg:grid-cols-3 items-center justify-center mx-6 md:mx-[39px] lg:mx-[164px] my-[164px]'>
       {designCards}
     </div>
   );

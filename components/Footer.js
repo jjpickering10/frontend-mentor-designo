@@ -40,7 +40,7 @@ const Footer = () => {
     );
   });
   return (
-    <footer className='w-full h-[815px] md:h-[423px] lg:h-[393px] flex flex-col items-center justify-center'>
+    <footer className='z-[1] relative w-full h-[815px] md:h-[423px] lg:h-[393px] flex flex-col items-center justify-center'>
       <div className='bg-black w-full h-full flex items-center justify-center'>
         <div className='w-full h-[498px] md:h-[177px] flex flex-col justify-between items-center mx-6 mt-[253px] mb-[64px] md:mx-[39px] lg:mx-[164px] md:mt-[166px] md:mb-[80px]'>
           <div className='w-full h-full flex flex-col md:flex-row justify-between items-center md:mb-[40px]'>

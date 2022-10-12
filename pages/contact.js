@@ -3,6 +3,7 @@ import Info from '../components/Info';
 import countries from '../data/countriesInfo';
 import contactSection from '../data/contactData';
 import ContactCard from '../components/ContactCard';
+import Pattern from '../components/Pattern';
 
 export default function Contact() {
   return (
@@ -14,6 +15,7 @@ export default function Contact() {
       </Head>
       <ContactCard section={contactSection[0]} />
       <Info sections={countries} page={'contact'} />
+      <Pattern page={'contact'} />
     </>
   );
 }
