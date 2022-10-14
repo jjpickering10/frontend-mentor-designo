@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import logo from '../public/assets/shared/desktop/logo-dark.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  console.log(logo);
 
   const handleNav = () => {
     setNav((prevNav) => !prevNav);
@@ -13,12 +15,19 @@ const Navbar = () => {
       <div className='fixed top-0 left-0 w-full h-24 md:h-[155px] flex items-center justify-between px-6 md:px-[39px] lg:px-[165px] bg-white z-50'>
         <Link href={'/'}>
           <Image
+            src={logo.src}
+            alt='logo-dark'
+            width={logo.width / 2}
+            height={logo.height / 2}
+            className='cursor-pointer'
+          />
+          {/* <Image
             src='/../public/assets/shared/desktop/logo-dark.png'
             alt='logo-dark'
             width={'202px'}
             height={'27px'}
             className='cursor-pointer'
-          />
+          /> */}
         </Link>
 
         <svg
