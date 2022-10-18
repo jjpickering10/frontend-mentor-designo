@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import img from '../public/assets/home/desktop/image-hero-phone.png';
 
 const Main = () => {
   return (
@@ -18,10 +19,10 @@ const Main = () => {
         </div>
         <div className='mx-[46px] lg:mx-0 w-[624px] h-[913px] relative top-[-89px] lg:top-[-30px] lg:right-[-74px] lg:left-auto lg:absolute'>
           <Image
-            src='/../public/assets/home/desktop/image-hero-phone.png'
+            src={img.src}
             alt='image-phone'
-            width='624px'
-            height='913px'
+            width={img.width}
+            height={img.height}
           />
         </div>
         <svg
