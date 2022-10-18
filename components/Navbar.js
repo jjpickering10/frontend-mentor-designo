@@ -5,7 +5,6 @@ import logo from '../public/assets/shared/desktop/logo-dark.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  console.log(logo);
 
   const handleNav = () => {
     setNav((prevNav) => !prevNav);
@@ -21,13 +20,6 @@ const Navbar = () => {
             height={logo.height / 2}
             className='cursor-pointer'
           />
-          {/* <Image
-            src='/../public/assets/shared/desktop/logo-dark.png'
-            alt='logo-dark'
-            width={'202px'}
-            height={'27px'}
-            className='cursor-pointer'
-          /> */}
         </Link>
 
         <svg

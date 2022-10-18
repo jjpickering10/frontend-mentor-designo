@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import logo from '../public/assets/shared/desktop/logo-light.png';
 
 const locations = [
   {
@@ -47,10 +48,10 @@ const Footer = () => {
             <div className='leading-[0px]'>
               <Link href={'/'}>
                 <Image
-                  src='/../public/assets/shared/desktop/logo-light.png'
+                  src={logo.src}
                   alt='logo-light'
-                  width={'202px'}
-                  height={'27px'}
+                  width={logo.width / 2}
+                  height={logo.height / 2}
                   className='cursor-pointer'
                 />
               </Link>
