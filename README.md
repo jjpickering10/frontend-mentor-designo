@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](public/assets/frontend-mentor-designo-agency-website-challenge.png)
+![](./public/assets/frontend-mentor-designo-agency-website-challenge.png)
 
 ### Links
 
